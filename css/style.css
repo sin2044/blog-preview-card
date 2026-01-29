@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap');
+
+:root {
+  --color-gray-950: #111;
+	--color-white: #fff;
+	--color-yellow: #f4d04e;
+	--color-gray-500: #6b6b6b;
+  --font-family: "Figtree", sans-serif;
+
+
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  margin: 0;
+  font-family: var(--font-family); 
+  background-color: var(--color-yellow) ;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;        
+  margin: 0;         
+  list-style: none;  
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.page__container {
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.page__card {
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-950);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  box-shadow: 0.5rem 0.5rem 0 0 #000;
+
+
+}
+
+.page__img {
+  display: block;
+  margin-bottom: 1.5rem;
+  border-radius: 0.625rem;
+}
+
+.page__content-status {
+  display: block;
+  width: fit-content;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-gray-950);
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-yellow);
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.page__publish-date {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-gray-950);
+  margin-bottom: 0.75rem;
+}
+
+.page__title {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--color-gray-950);
+  margin-bottom: 0.75rem;
+}
+
+.page__title:hover {
+  cursor: pointer
+  var(--color-yellow);
+}
+.page__description {
+  max-width: 22.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-gray-500);
+  margin-bottom: 1.5rem;
+}
+
+.page__author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+}
+
+.page__author-name {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-gray-950);
+}
+
+
+@media (max-width: 480px) {
+  .page__container {
+    padding: 0 1.5rem; 
+  }
+}
+
+
