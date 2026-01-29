@@ -87,7 +87,7 @@ ul {
   display: block;
   width: fit-content;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
   color: var(--color-gray-950);
   padding: 0.25rem 0.75rem;
@@ -140,6 +140,17 @@ ul {
   color: var(--color-gray-950);
 }
 
+.footer__link {
+  color:inherit;
+  text-decoration: underline;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  text-decoration-color: #0066cc;
+  outline: 2px solid #0066cc; 
+  outline-offset: 2px;
+}
 
 @media (max-width: 480px) {
   .page__container {
